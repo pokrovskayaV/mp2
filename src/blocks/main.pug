@@ -1,0 +1,20 @@
+include mixins.pug
+
+main.main(id="main")
+  include header.pug
+  .main__bg.main__bg_left
+  .main__bg.main__bg_right
+  .main__container.container
+    .main__content
+      .main__left-block
+        h1.main__title Узнай самую полную и точную внешнюю и внутреннюю аналитику <span class="green">Wildberries</span> и <span class="green">Ozon</span> в одном месте
+        .main__btn-block.btn-block
+          a.btn-block__btn.btn__sta(href="#popup_2" class="popup-link") Попробовать
+          span.btn-block__text Заполните форму и получите<br>бесплатный доступ на 24 часа
+        .main__bottom-block
+          p.main__subtitle <span class="light">Всего на рынке более 40 тысяч активных селлеров,</span><br> <span class="reg">17 тысяч из них зарегистрированы в MPSTATS </span> 
+          img.main__diagram(src="../img/main-diagram.svg", alt="")
+      .main__right-block
+        img.main__image(src="../img/main-photo.png", alt="")
+  a(href="#reasons").btn__scroll.js-scroll-to
+    img(src="../img/icons/arrow-down.svg", alt="")

@@ -1,0 +1,12 @@
+mixin reason(src,number,text)
+  .reason&attributes(attributes)
+    span.reason__number=number
+    img.reason__img(src=src, alt="")
+    p.reason__text!=text
+
+mixin client(src,number,text)
+  .client&attributes(attributes)
+    span.client__number=number
+    .client__img  
+      img(src=src, alt="")
+    p.client__text!=text

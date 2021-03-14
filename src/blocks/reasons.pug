@@ -1,0 +1,18 @@
+include mixins.pug
+
+.reasons(id="reasons")
+  .bg.bg_inside
+  .bg.bg_outside
+  .reasons__container
+    .reasons__content
+      .reasons__top-block
+        p.reasons__title.title Почему нельзя выходить на маркетплейсы <span class="light-green">без анализа?</span>
+        p.reasons__subtitle.subtitle На быстро меняющимся рынке, доступ к актуальным и свежим<br> данным - критически важен
+        .reasons__items 
+          +reason('../img/reason1.svg','1','Одна поставка нераспроданного товара многократно дороже подписки на сервис аналитики')
+          +reason('../img/reason2.svg','2','Проверка гипотез с нашим сервисом аналитики теперь занимает минуты')
+          +reason('../img/reason3.svg','3','Влияние трендов, сезонности и изменений в правилах работы Wildberries и Ozon  сразу отражаются в наших данных ')
+      .reasons__bottom-block
+        p.reasons__text Свяжитесь с нашими менеджерами, чтобы узнать больше кейсов про эффективность использования аналитики
+        a.reasons__btn.btn__sta(href="#popup_2" class="popup-link") Связаться
+        p.reasons__subtext Узнайте, как на самом деле обстоят дела на маркетплейсах

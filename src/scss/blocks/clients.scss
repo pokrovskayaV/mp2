@@ -1,0 +1,128 @@
+.clients {
+  position: relative;
+  margin-top: 134px;
+  @media (max-width: 769px) {
+		margin-top: 100px;
+	}
+  &__content {
+    position: relative;
+    z-index: 2;
+    padding: 64px 0 80px;
+
+    @media (max-width: 860px) {
+			padding: 70px 0;
+		}
+  }
+  &__title {
+    text-align: center;
+  }
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:1080px) {
+      justify-content: center;
+      align-items: flex-start;
+		}
+    @media (max-width:769px) {
+      justify-content: space-evenly;
+		}
+    @media (max-width:474px) {
+     flex-direction: column;
+     align-items: center;
+		}
+    &._2 {
+      justify-content: center;
+    }
+  }
+  .client {
+    background: #ffffffd7;
+    box-shadow: 0px 4.51506px 9.03012px rgba(176, 190, 197, 0.24);
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 18px 5px;
+    box-sizing: border-box;
+    max-width: 330px;
+    width: 100%;
+    height: 260px;
+    margin-top: 30px;
+    margin: 20px 15px;
+    @media (max-width: 1080px) {
+			height: 250px;
+      margin: 10px 20px;
+		}
+      @media (max-width: 860px) {
+			padding: 20px 10px 5px;
+      height: 210px;
+		}
+    @media (max-width:769px) {
+      margin: 10px;
+      padding: 20px 5px 5px;
+		}
+    @media (max-width:474px) {
+       padding: 20px 15px 5px;
+       height: 170px;
+     }
+    &._medium {
+      max-width: 380px;
+      padding-bottom: 10px;
+      margin-top: 60px;
+      @media (max-width:1080px) {
+        margin-top: 10px;
+        max-width: 330px;
+      }
+
+    }
+    &__img {
+      max-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+ @media (max-width: 860px) {
+			max-height: 100px;
+		}
+    @media (max-width: 769px) {
+			max-height: 85px;
+		}
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    &__number {
+      position: absolute;
+      top: -7px;
+      left: -18px;
+      font-weight: 900;
+      font-size: 45px;
+      line-height: 55px;
+      text-align: center;
+      color: #BADECE;
+      @media (max-width: 1080px) {
+        font-size: 35px;
+        line-height: 43px;
+      }
+    }
+    &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #000;
+      margin: auto 0;
+      @media (max-width: 1080px) {
+        font-size: 15px;
+      line-height: 130%;
+      }
+      @media (max-width: 860px) {
+         font-size: 14px;
+      }
+    }
+  }
+}

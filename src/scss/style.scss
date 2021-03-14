@@ -1,0 +1,61 @@
+@import 'fonts';
+@import 'general';
+@import url("header.css");
+@import url("footer.css");
+@import url("main.css");
+
+
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+}
+html {
+  &.baguette-lock {
+    overflow: hidden;
+  }
+}
+
+body {
+	background: #F8FDFA;
+  &.lock {
+    overflow: hidden;
+    position: relative;
+  }
+  &.baguette-lock {
+    overflow: scroll;
+  }
+}
+
+button,
+a {
+	text-decoration: none;
+	border: none;
+	outline: none;
+	cursor: pointer !important;
+	color: inherit;
+}
+
+input,
+textarea,
+fieldset {
+	border: none;
+	outline: none;
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}

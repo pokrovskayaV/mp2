@@ -1,0 +1,17 @@
+include mixins.pug
+
+.clients(id="clients")
+  .bg.bg_inside
+  .bg.bg_outside
+  .clients__container.container
+    .clients__content
+        p.clients__title.title Кто наши <span class="light-green">клиенты </span>
+        p.clients__subtitle.subtitle Селлеры из топ 1000 на Wildberries выбирают наш сервис
+        .clients__row
+          +client('../img/client1.svg','01.','Производители товаров, изучающие спрос')
+          +client('../img/client2.svg','02.','Выходящие на маркетплейсы компании, которые руководствуются данными')(class="_medium")
+          +client('../img/client3.svg','03.','Интеграторы и агентства<br> по e-commerce')(data-da="clients__row_empty, 1, 1080")
+        .clients__row.clients__row_empty
+        .clients__row._2
+          +client('../img/client4.svg','04.','Research институты и аналитические агентства')(data-da="clients__row_empty, 2, 1080")
+          +client('../img/client5.svg','05.','Торговые компании, расширяющие товарную матрицу')

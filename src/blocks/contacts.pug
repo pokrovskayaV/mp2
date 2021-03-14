@@ -1,0 +1,35 @@
+.contacts(id="contacts")
+  .contacts__container.container
+    .contacts__content
+      p.contacts__title Оставьте заявку на <span class="light-green"><br> демонстрацию + тестовый доступ</span>
+      .contacts__body
+        .contacts__left-block
+          p.contacts__text Если Вы ещё не уверены в выборе, то мы <br>можем провести абсолютно<span class="semi-bold"> бесплатную демонстрацию сервиса</span>
+          p.contacts__text Она займет около 20 минут, наш специалист покажет весь набор инструментов и <span class="semi-bold">ответит на любые воросы </span>
+          p.contacts__text Вы получите <span class="semi-bold">тестовый доступ</span> к системе и её возможностям на сутки, чтобы оценить инструменты самостоятельно
+        .contacts__right-block(data-da="contacts__left-block, 1, 860")
+          img.contacts__img(src="../img/contacts.svg", alt="")
+          form.contacts__form.form(action="#")
+            input.form__name(type="text" placeholder="Введите имя")
+            input.form__number(type="text" placeholder="Введите номер телефона")
+            input.form__email(type="email" placeholder="Введите e-mail")
+            .form__checkbox-block.consent
+              input.form__checkbox.consent__input(id="checkbox1" type="checkbox" name="check" value="None" required)
+              label.consent__label(for="checkbox1")
+                p.consent__text Я даю согласие на обработку моей персональной информации на условиях, определенных политикой конфиденциальности
+            input.form__btn(type="submit", value="Оставить заявку на демонстрацию")
+            <a class="form__link" href="../Politika_mpstats_ru.pdf" target="_blank">Политика конфиденциальности</a>
+    .contacts__bottom 
+      p.contacts__subtitle Присоединяйтесь к нам в социальных сетях
+      .contacts__icons 
+        a.contacts__link(href="https://vk.com/mpstatsio" target="_blank")
+          img(src="../img/icons/vk.svg", alt="")
+        a.contacts__link(href="https://telegram.me/mpstatsio" target="_blank")
+          img(src="../img/icons/tg.svg", alt="")
+        a.contacts__link(href="https://www.facebook.com/mpstats.io/" target="_blank")
+          img(src="../img/icons/fb.svg", alt="")
+        a.contacts__link(href="https://www.instagram.com/mpstats.io/" target="_blank")
+          img(src="../img/icons/inst.svg", alt="")
+        a.contacts__link(href="https://www.youtube.com/channel/UCbeZI3l4b5PprFVTAX4NcYA" target="_blank")
+          img(src="../img/icons/yt.svg", alt="")  
+        
