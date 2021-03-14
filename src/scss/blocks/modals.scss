@@ -15,84 +15,15 @@
       transition: opacity ease 0.3s;
     }
   }
-  &__form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    @media (max-width:860px) {
-      width: auto;
-    }
-  }
-  &__label {
-    font-weight: 200;
-    font-size: 13px;
-    line-height: 15px;
-    margin-bottom: 6px;
-  }
-  &__number, &__name {
-    background: #FFFFFF;
-    border: 0.5px solid #7C7C7C;
-    box-sizing: border-box;
-    border-radius: 15px;
-    width: 100%;
-    padding: 16px 10px;
-    margin-bottom: 21px;
-    max-width: 300px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 18px;
-    color: rgb(0, 0, 0);
-  }
-  input::placeholder {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-    color: rgba(0, 0, 0, 0.58);
-  }
-  &__btn {
-    margin-top: 7px;
-    max-width: 190px;
-    align-self: center;
-  }
-  &__title {
-    font-family: 'Montserrat';
-    font-weight: normal;
-    font-size: 35px;
-    line-height: 42px;
-    color: rgba(0, 0, 0, 0.8);
-    margin: 0;
-    @media (max-width:1270px) {
-    font-size: 30px;
-    line-height: 33px;
-    }
-    @media (max-width:860px) {
-     font-size: 20px;
-    line-height: 22px;
-    }
-  }
-  &__text {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 130%;
-    color: rgb(0, 0, 0);
-    position: relative;
-    margin: 30px 0;
-    @media (max-width:1270px) {
-      font-size: 16px;
-    }
-     @media (max-width:860px) {
-      font-size: 15px;
-    }
-  }
 }
 
 .call {
   .popup__content {
     max-width: 440px !important;
     padding: 61px 40px;
+    @media (max-width:860px) {
+      padding: 40px 10px; 
+    }
   }
   &__content {
     display: flex;
@@ -106,6 +37,10 @@
     text-align: center;
     color: #000;
     margin-bottom: 32px;
+    @media (max-width:860px) {
+      font-size: 18px;
+      line-height: 130%;
+    }
   }
   &__link {
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.14);
@@ -157,6 +92,9 @@
   .popup__content {
     max-width: 440px !important;
     padding: 30px 40px 40px;
+    @media (max-width:860px) {
+      padding: 30px 20px; 
+    }
   }
   &__content {
     display: flex;
@@ -170,11 +108,18 @@
     text-align: center;
     color: #000;
     margin-bottom: 24px;
+    @media (max-width:860px) {
+      font-size: 18px;
+      line-height: 130%;
+    }
   }
   &__form {
     display: flex;
     flex-direction: column;
     max-width: 340px;
+    @media (max-width:474px) {
+      max-width: 90%;
+    }
   }
   &__name, &__number,&__email {
     background: #ffffff;
@@ -188,6 +133,9 @@
    font-size: 14px;
    line-height: 130%;
    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+   @media (max-width:474px) {
+   padding: 15px;
+  }
   }
   input::-webkit-input-placeholder {
    color: rgba(104, 110, 121, 0.56);
@@ -238,6 +186,9 @@ z-index: 1;
 background-image: linear-gradient(to right, #012e1f 0%, #138f70 51%, #360033 100%);
 transition: 0.5s;
 background-size: 200% auto;
+@media (max-width:474px) {
+ height: 50px;
+}
 &:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
@@ -264,6 +215,9 @@ background-size: 200% auto;
     flex-direction: column;
     align-items: center;
     padding: 80px 0; 
+    @media (max-width:860px) {
+      padding: 40px 0; 
+    }
   }
   &__title {
     font-weight: 900;
@@ -272,6 +226,10 @@ background-size: 200% auto;
     text-align: center;
     color: #474A50;
     margin: 16px 40px 45px;
+    @media (max-width:860px) {
+      font-size: 18px;
+      line-height: 130%;
+    }
   }
   &__text {
     background: #D4E9E0;
@@ -416,6 +374,9 @@ background-size: 200% auto;
   background: #DFF3EA;
   box-shadow: 0px 1.89565px 14.2174px 1.89565px rgba(255, 255, 255, 0.5);
   border-radius: 15px;
+  @media (max-width:474px) {
+    border-radius: 0;
+   }
 }
 
 

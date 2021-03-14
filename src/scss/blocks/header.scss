@@ -147,6 +147,9 @@
 			line-height: 15px;
 			height: 40px;
 		}
+		@media (max-width: 474px) {
+			margin: 0;
+		}
 
 		&:after,
 		&:before {

@@ -2,6 +2,7 @@ export default function sliderInit () {
   var tariffSlider = new Swiper('.tariff__slider ', {
      spaceBetween: 15,
      slidesPerView: 'auto', 
+     
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -33,6 +34,7 @@ export default function sliderInit () {
       watchSlidesVisibility: true,
       watchSlidesProgress: true,    
       freeMode: true,
+      resizeObserver: true,
       navigation: {
         nextEl: document.querySelector('.swiper-button-next_th'),
         prevEl: document.querySelector('.swiper-button-prev_th'),
@@ -47,13 +49,12 @@ export default function sliderInit () {
       769: {
        slidesPerView: 4, 
        spaceBetween: 10,
+       direction: 'horizontal',
       },
       1080: {
       spaceBetween: 0,
       slidesPerView: 16,
       direction: 'vertical',
-      navigation: false,
-      freeMode: false,
       },
       }
     });
@@ -85,11 +86,9 @@ export default function sliderInit () {
       320: {
         slidesPerView: 1,
         spaceBetween: 20,
-        autoHeight: true,
        },
       600: {
        slidesPerView: 1.2,
-       autoHeight: false,
        },
       769: {
        slidesPerView: 1.5,
