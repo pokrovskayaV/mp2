@@ -9,6 +9,9 @@
   "author": "Fls",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -25,6 +28,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "gulp-html-beautify": "^1.0.1"
   }
 }

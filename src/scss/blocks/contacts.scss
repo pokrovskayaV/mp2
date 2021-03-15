@@ -133,6 +133,10 @@
 			width: 100%;
 		}
 
+		&_hidden {
+			display: none;
+		}
+
 		&__name,
 		&__number,
 		&__email {
@@ -233,6 +237,18 @@
 
 		input:-moz-placeholder {
 			color: rgba(104, 110, 121, 0.56);
+		}
+
+		&__input {
+			&_hidden {
+				display: none;
+			}
+		}
+	}
+
+	.thx-message {
+		&_hidden{
+			display: none;
 		}
 	}
 

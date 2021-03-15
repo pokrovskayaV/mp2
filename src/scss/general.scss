@@ -312,12 +312,13 @@
 		}
 	}
 
-	input[type=checkbox] {
-		visibility: hidden;
+	&__input:checked + .consent__label:after{
+		opacity: 1;
+	}
 
-		&:checked+label:after {
-			opacity: 1;
-		}
+	&__wrapper {
+		display: flex;
+		justify-content: flex-start;
 	}
 }
 
