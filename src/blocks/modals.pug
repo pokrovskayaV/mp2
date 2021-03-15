@@ -20,34 +20,33 @@
       button.modal__close.popup__close.close-popup
       .try__content
         h3.try__title Оставьте заявку на бесплатную демонстрацию <span class="light-green">+ тестовый доступ</span>
-        form.try__form.form(action="#")
-          input.try__name(type="text" placeholder="Введите имя")
-          input.try__number(type="text" placeholder="Введите номер телефона")
-          input.try__email(type="email" placeholder="Введите e-mail")
-          .try__checkbox-block.consent
-            input.try__checkbox.consent__input(id="checkbox" type="checkbox" name="check" value="None" required)
-            label.consent__label(for="checkbox") 
+        form.try__form.form.js-form(action='https://cors-anywhere.herokuapp.com/https://mpstats.io/api/public/get_demo' method="POST")
+          input.form__name(name='name' type="text" placeholder="Введите имя" required)
+          input.form__number(name='phone' type="text" placeholder="Введите номер телефона" required)
+          input.form__email(name='email' type="email" placeholder="Введите e-mail" required)
+          input.js-check-spam.js-no-index.form__input.form__input_hidden(type="text")
+          .form__checkbox-block.consent
+            label.consent__wrapper
+              input.form__checkbox.consent__input.js-no-index(type="checkbox" name="check" required)
+              span.consent__label
               p.consent__text Я даю согласие на обработку моей персональной информации на условиях, определенных политикой конфиденциальности
-          input.try__btn(type="submit", value="Оставить заявку на демонстрацию")
-          <a class="try__link" href="../Politika_mpstats_ru.pdf" target="_blank">Политика конфиденциальности</a>
-
-.popup#popup_3.thanks
-  .popup__body 
-    .popup__content
-      button.modal__close.popup__close.close-popup
-      .thanks__content
-        img(src="../img/check.svg", alt="").thanks__img
-        h3.thanks__title Спасибо за заявку!<br>Наш менеджер свяжется с Вами <span class="light-green"> в ближайшее время</span>
-        p.thanks__text Присоединяйтесь к нам в социальных сетях
-        .thanks__icons 
-          a.thanks__link(href="https://vk.com/mpstatsio")
-            img(src="../img/icons/vk-color.svg", alt="")
-          a.thanks__link(href="https://telegram.me/mpstatsio")
-            img(src="../img/icons/tg-color.svg", alt="")
-          a.thanks__link(href="https://www.facebook.com/mpstats.io")
-            img(src="../img/icons/fb-color.svg", alt="")
-          a.thanks__link(href="https://www.instagram.com/mpstats.io/")
-            img(src="../img/icons/inst-color.svg", alt="")
+          input.form__btn.js-btn-submit.js-no-index(type="submit" value="Оставить заявку на демонстрацию")
+          <a class="form__link" href="../Politika_mpstats_ru.pdf" target="_blank">Политика конфиденциальности</a>
+        .contacts__form.form.thx-message.thx-message_hidden
+          .thx-message__wrapper
+            .thanks__content
+              img(src="../img/check.svg", alt="").thanks__img
+              h3.thanks__title Спасибо за заявку!<br>Наш менеджер свяжется с Вами <span class="light-green"> в ближайшее время</span>
+              p.thanks__text Присоединяйтесь к нам в социальных сетях
+              .thanks__icons 
+                a.thanks__link(href="https://vk.com/mpstatsio")
+                  img(src="../img/icons/vk-color.svg", alt="")
+                a.thanks__link(href="https://telegram.me/mpstatsio")
+                  img(src="../img/icons/tg-color.svg", alt="")
+                a.thanks__link(href="https://www.facebook.com/mpstats.io")
+                  img(src="../img/icons/fb-color.svg", alt="")
+                a.thanks__link(href="https://www.instagram.com/mpstats.io/")
+                  img(src="../img/icons/inst-color.svg", alt="")
         
 
 .popup#menu.menu
