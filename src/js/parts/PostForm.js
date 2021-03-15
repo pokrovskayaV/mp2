@@ -26,7 +26,7 @@ class SubmitForm {
 
         this.serializeForm();
         this.send().then(response => {
-            if (!response.ok) {
+            if (response.ok) {
                 this.form.classList.add('form_hidden');
                 this.thxMessage.classList.remove('thx-message_hidden');
             }
