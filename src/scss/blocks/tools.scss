@@ -106,7 +106,13 @@
 		line-height: 22px;
 		color: #000;
 		cursor: pointer;
-
+		-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none; 
+-webkit-tap-highlight-color: transparent;
 		@media (max-width: 1080px) {
 			font-size: 15px;
 			line-height: 130%;
@@ -154,7 +160,7 @@
 		height: 20px;
 		outline: none;
 		cursor: pointer;
-
+		-webkit-tap-highlight-color: transparent;
 		@media (min-width: 1080px) {
 			display: none;
 		}
@@ -268,7 +274,7 @@
 			transform: translate(0, -50%);
 			width: 55px;
 			height: 55px;
-
+			-webkit-tap-highlight-color: transparent;
 			@media (max-width: 1080px) {
 				width: 42px;
 				height: 42px;

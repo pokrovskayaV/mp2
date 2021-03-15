@@ -150,6 +150,7 @@
     background-color: rgba(87, 145, 127, 0);
     z-index: 2;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
     @media (max-width: 1080px) {
       width: 150px;
     }
