@@ -1,6 +1,6 @@
 class SubmitForm {
-    constructor() {
-        this.form = document.querySelector('.js-form');
+    constructor(form) {
+        this.form = form;
 
         if (!this.form) {
             return;
@@ -9,11 +9,16 @@ class SubmitForm {
         this.inputs = this.form.querySelectorAll('input');
         this.submitBtn = this.form.querySelector('.js-btn-submit');
         this.spamInput = this.form.querySelector('.js-check-spam');
-        this.thxMessage = document.querySelector('.thx-message');
+        this.utmInput = this.form.querySelector('.js-utm');
+        this.thxMessage = this.form.nextElementSibling;
+
+        this.init();
     }
 
     init() {
         this.form.addEventListener('submit', this.handlerSubmit.bind(this))
+
+        this.utmInput.value = window.location.search;
     }
 
     handlerSubmit(event) {
@@ -53,5 +58,5 @@ class SubmitForm {
           });
     }
 }
-const submitForm = new SubmitForm()
-export default submitForm
+
+export default SubmitForm

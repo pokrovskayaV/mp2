@@ -9,10 +9,11 @@
 					p.contacts__text Вы получите <span class="semi-bold">тестовый доступ</span> к системе и её возможностям на сутки, чтобы оценить инструменты самостоятельно
 				.contacts__right-block(data-da="contacts__left-block, 1, 860")
 					img.contacts__img(src="../img/contacts.svg" alt="")
-					form.contacts__form.form.js-form(action='https://cors-anywhere.herokuapp.com/https://mpstats.io/api/public/get_demo' method="POST")
+					form.contacts__form.form.js-form(action='https://mpstats.io/api/public/get_demo' method="POST")
 						input.form__name(name='name' type="text" placeholder="Введите имя" required)
 						input.form__number(name='phone' type="text" placeholder="Введите номер телефона" required)
 						input.form__email(name='email' type="email" placeholder="Введите e-mail")
+						input.js-utm.form__input.form__input_hidden(name='utm' type="text")
 						input.js-check-spam.js-no-index.form__input.form__input_hidden(type="text")
 						.form__checkbox-block.consent
 							label.consent__wrapper

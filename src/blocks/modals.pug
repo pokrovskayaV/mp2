@@ -20,10 +20,11 @@
       button.modal__close.popup__close.close-popup
       .try__content
         h3.try__title Оставьте заявку на бесплатную демонстрацию <span class="light-green">+ тестовый доступ</span>
-        form.try__form.form.js-form(action='https://cors-anywhere.herokuapp.com/https://mpstats.io/api/public/get_demo' method="POST")
+        form.try__form.form.js-form(action='https://mpstats.io/api/public/get_demo' method="POST")
           input.form__name(name='name' type="text" placeholder="Введите имя" required)
           input.form__number(name='phone' type="text" placeholder="Введите номер телефона" required)
-          input.form__email(name='email' type="email" placeholder="Введите e-mail" required)
+          input.form__email(name='email' type="email" placeholder="Введите e-mail")
+          input.js-utm.form__input.form__input_hidden(name='utm' type="text")
           input.js-check-spam.js-no-index.form__input.form__input_hidden(type="text")
           .form__checkbox-block.consent
             label.consent__wrapper
