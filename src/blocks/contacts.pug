@@ -9,24 +9,7 @@
 					p.contacts__text Вы получите <span class="semi-bold">тестовый доступ</span> к системе и её возможностям на сутки, чтобы оценить инструменты самостоятельно
 				.contacts__right-block(data-da="contacts__left-block, 1, 860")
 					img.contacts__img(src="../img/contacts.svg" alt="")
-					form.contacts__form.form.js-form(action='https://mpstats.io/api/public/get_demo' method="POST")
-						input.form__name(name='name' type="text" placeholder="Введите имя" required)
-						input.form__number(name='phone' type="text" placeholder="Введите номер телефона" required)
-						input.form__email(name='email' type="email" placeholder="Введите e-mail")
-						input.js-utm.form__input.form__input_hidden(name='utm' type="text")
-						input.js-check-spam.js-no-index.form__input.form__input_hidden(type="text")
-						.form__checkbox-block.consent
-							label.consent__wrapper
-								input.form__checkbox.consent__input.js-no-index(type="checkbox" name="check" required)
-								span.consent__label
-								p.consent__text Я даю согласие на обработку моей персональной информации на условиях, определенных политикой конфиденциальности
-						input.form__btn.js-btn-submit.js-no-index(type="submit" value="Оставить заявку на демонстрацию")
-						<a class="form__link" href="../Politika_mpstats_ru.pdf" target="_blank">Политика конфиденциальности</a>
-					.contacts__form.form.thx-message.thx-message_hidden
-						.thx-message__wrapper
-							.thanks__content
-								img(src="../img/check.svg", alt="").thanks__img
-								h3.thanks__title Спасибо за заявку!<br>Наш менеджер свяжется с Вами <span class="light-green"> в ближайшее время</span>
+					include form.pug
 		.contacts__bottom 
 			p.contacts__subtitle Присоединяйтесь к нам в социальных сетях
 			.contacts__icons 
